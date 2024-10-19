@@ -1,0 +1,58 @@
+#aboutMe{
+    width: 1110px;
+    height: 834px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 150px;
+    border: solid 1px red;
+}
+
+#aboutMe-topSide{
+    width: inherit;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#aboutMe-mainPic{
+    width: 540px;
+    height: 600px;
+    background: url('./img/profilePic-desktop.jpg') center/540px no-repeat;
+}
+
+#aboutMe-mainContent{
+    width: 350px;
+    height: 600px;
+    padding-top: 50px;
+    text-align: left;
+    border-top: solid 1px #979797;
+    border-bottom: solid 1px #979797;
+}
+
+#aboutMe-mainContent p{
+    margin: 28px 0px 24px;
+    opacity: 0.8;
+}
+
+#aboutMe-bottomSide{
+    width: inherit;
+    height: 84px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px red;
+}
+
+#aboutMe-bottomSide h2{
+    width: 350px;
+    height: inherit;
+}
+
+#aboutMe-line{
+    width: 534px;
+    height: 1px;
+    background-color: #979797;
+}
