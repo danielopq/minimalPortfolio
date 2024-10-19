@@ -1,0 +1,78 @@
+#mainFooter{
+    width: inherit;
+    height: 80px;
+    padding: 24px 165px;
+    background-color: var(--darkGrey);
+}
+
+#mainFooterContainer{
+    width: 1110px;
+    height: 32px;
+    padding-left: 109px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: url('./img/logo-grey.svg') left/61px no-repeat;
+}
+
+#mainFooterlinks{
+    width: 309px;
+    height: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#mainFooterlinks button{
+    height: 14px;
+    padding: 0px;
+    font: 400 12px/14px 'PublicSans-Regular';
+    letter-spacing: 2px;
+    background-color: transparent;
+    color:white;
+    border: none;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+#mainFooterlinks button:hover{
+    opacity: 0.3;
+}
+
+#mainFooterSocialMedia{
+    width: 102px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#mainFooterSocialMedia button{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+#mainFooterSocialMedia button:hover{
+    opacity: 0.3;
+}
+
+#gitHub-bt{
+    background-image: url('./img/github.svg');
+}
+
+#twitter-bt{
+    background-image: url('./img/twitter.svg');
+}
+
+#linkedin-bt{
+    background-image: url('./img/linkedin.svg');
+}
+
