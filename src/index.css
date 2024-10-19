@@ -7,6 +7,21 @@
     --red: #F43030; /* rgb(244, 48, 48) - hsl(0, 90%, 57%)  */
 }
 
+@font-face {
+    font-family: 'IbarraRealNova-Bold';
+    src: url('../src/fonts/IbarraRealNova-Bold.woff')format('woff');
+}
+
+@font-face {
+    font-family: 'IbarraRealNova-Regular';
+    src: url('../src/fonts/IbarraRealNova-Regular.woff')format('woff');
+}
+
+@font-face {
+    font-family: 'PublicSans-Regular';
+    src: url('../src/fonts/IbarraRealNova-Regular.woff')format('woff');
+}
+
 *{
     box-sizing: border-box;
 }
