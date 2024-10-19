@@ -1,10 +1,16 @@
-#contactMe-getInTouch{
+#getInTouch{
     width: 1110px;
-    height: 307px;
+    height: 356px;
     margin-top: 94px;
+    padding: 48px 0px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     border: solid 1px red;
+}
+
+#getInTouch-content{
+    width: 635px;
+    height: 258px;
 }
