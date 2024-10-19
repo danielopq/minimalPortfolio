@@ -1,0 +1,10 @@
+#contactMe-getInTouch{
+    width: 1110px;
+    height: 307px;
+    margin-top: 94px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: solid 1px red;
+}
