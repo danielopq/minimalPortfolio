@@ -1,6 +1,10 @@
 import './contactFooter.css';
 import StandardButton from '../defaultButton/StandardButton';
 
+/**
+ * Renders a contact footer section that appears on various parts of the website.
+ * @returns {JSX.Element} - The ContactFooter component.
+ */
 const ContactFooter: React.FC = () => {
     return (
         <section id="contactFooter">
