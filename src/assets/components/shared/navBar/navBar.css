@@ -1,5 +1,36 @@
-#navaBar{
+#navBar{
     width: 1111px;
     height: 32px;
-    border: solid 1px red;
+    position: absolute;
+    z-index: 100;
+    margin-top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('./img/logo.svg') left/60px no-repeat;
 }
+
+#navBarLinks{
+   width: 306px;
+   height: inherit;
+   float: right;
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+   justify-content: space-between;
+}
+
+#navBarLinks button{
+    font: 400 12px/32px 'PublicSans-Regular';
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navBarActiveLink{
+    color:var(--cyan);
+}
+
+.navBarInactiveLink{
+    color:var(--darkBlue);
+}
+
