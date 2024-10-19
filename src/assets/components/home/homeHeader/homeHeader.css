@@ -1,0 +1,24 @@
+#homeHeader{
+    width: 1110px;
+    height: 600px;
+    margin-top: 54px;
+    background: url('./img/homeHeader-desktop.jpg') center/1110px no-repeat;
+}
+
+#homeHeader > div{
+    width: 445px;
+    height: 357px;
+    float: left;
+    margin-top: 243px;
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#homeHeader h1{
+    width: 390px;
+    color: var(--darkGrey);
+}

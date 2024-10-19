@@ -21,6 +21,7 @@
 
 #navBarLinks button{
     font: 400 12px/32px 'PublicSans-Regular';
+    letter-spacing: 2px;
     background-color: transparent;
     border: none;
     cursor: pointer;

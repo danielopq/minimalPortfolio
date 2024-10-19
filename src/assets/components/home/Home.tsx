@@ -1,9 +1,10 @@
 import './home.css';
+import HomeHeader from './homeHeader/HomeHeader';
 
 const Home:React.FC = () =>{
     return(
         <main id="home">
-            <h1>Hola mundo</h1>
+            <HomeHeader/>
         </main>
     )
 }
