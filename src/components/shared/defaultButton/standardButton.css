@@ -2,15 +2,29 @@
     height: 48px;
     font: 400 12px/48pxpx 'PublicSans-Regular';
     letter-spacing: 2px;
-    background-color: transparent;
-    color: var(--darkGrey);
-    border: solid 1px var(--darkGrey);
     padding: 0px 32px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.standardButton:hover{
+.lightButton{
+    background-color: var(--lightGrey);
+    color: var(--darkGrey);
+    border: solid 1px var(--darkGrey);
+}
+
+.lightButton:hover{
     background-color: var(--darkGrey);
     color: var(--lightGrey);
+}
+
+.darkButton{
+    background-color: var(--darkBlue);
+    color: white;
+    border: solid 1px var(--darkBlue);
+}
+
+.darkButton:hover{
+    background-color: white;
+    color: var(--darkBlue);
 }

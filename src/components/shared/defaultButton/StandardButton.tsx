@@ -2,6 +2,7 @@ import './standardButton.css';
 
 interface StandardButtonProps{
     value:string;
+    mode: 'darkButton' | 'lightButton';
     disabled?:boolean;
 }
 
@@ -12,9 +13,9 @@ interface StandardButtonProps{
  * @param {boolean} [props.disabled=false] - Indicates whether the button is disabled. Defaults to `false`.
  * @returns {JSX.Element} The rendered standardButton component.
  */
-const StandardButton:React.FC<StandardButtonProps> =({value,disabled=false})=>{
+const StandardButton:React.FC<StandardButtonProps> =({value,mode,disabled=false})=>{
     return(
-        <button className='standdardButton' disabled={disabled}>{value.toUpperCase()}</button>
+        <button className={`standardButton ${mode}`} disabled={disabled}>{value.toUpperCase()}</button>
     )
 }
 export default StandardButton;
