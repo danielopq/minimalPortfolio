@@ -1,5 +1,7 @@
 import './footer.css';
 
+import SocialMedia from '../socialMedia/SocialMedia';
+
 const Footer: React.FC = () => {
 
     /**
@@ -10,14 +12,6 @@ const Footer: React.FC = () => {
 
     }
 
-    /**
-     * Opens the specified external website.
-     * @param {string} website - The URL of the website to open.
-     */
-    const loadWebsite = (website: string): void => {
-        window.open(website, '_blank');
-    }
-
     return (
         <footer id='mainFooter'>
             <div id="mainFooterContainer">
@@ -26,11 +20,7 @@ const Footer: React.FC = () => {
                     <button onClick={() => changeSection('portfolio')}>PORTFOLIO</button>
                     <button onClick={() => changeSection('contact')}>CONTACT ME</button>
                 </div>
-                <div id="mainFooterSocialMedia">
-                    <button id="gitHub-bt" onClick={() => loadWebsite('https://github.com/danielopq')}></button>
-                    <button id="twitter-bt" onClick={() => loadWebsite('https://twitter.com')}></button>
-                    <button id="linkedin-bt" onClick={() => loadWebsite('https://www.linkedin.com/in/danielmartinezduque')}></button>
-                </div>
+                <SocialMedia />
             </div>
         </footer>
     )

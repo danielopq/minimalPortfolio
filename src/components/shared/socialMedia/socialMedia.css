@@ -1,0 +1,35 @@
+#socialMedia{
+    width: 102px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#socialMedia button{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+#socialMedia button:hover{
+    opacity: 0.3;
+}
+
+#gitHub-bt{
+    background-image: url('./img/github.svg');
+}
+
+#twitter-bt{
+    background-image: url('./img/twitter.svg');
+}
+
+#linkedin-bt{
+    background-image: url('./img/linkedin.svg');
+}
