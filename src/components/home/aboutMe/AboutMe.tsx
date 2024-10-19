@@ -25,13 +25,13 @@ const AboutMe: React.FC = () => {
                         going for a walk, run or cycling. I’d love you to check
                         out my work.
                     </p>
-                    <StandardButton value='GO TO PORTFOLIO'/>
+                    <StandardButton value='GO TO PORTFOLIO' mode='lightButton'/>
                 </div>
             </div>
             <div id="aboutMe-bottomSide">
                 <h2>Interested in doing a project together?</h2>
                 <div id="aboutMe-line"></div>
-                <StandardButton value='CONTACT ME'/>
+                <StandardButton value='CONTACT ME' mode='lightButton'/>
             </div>
         </section>
     )
