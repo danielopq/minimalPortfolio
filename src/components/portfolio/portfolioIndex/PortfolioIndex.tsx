@@ -1,4 +1,4 @@
-import './portfolioContact.css';
+import './portfolioIndex.css';
 
 const PortfolioIndex:React.FC = () =>{
     return(

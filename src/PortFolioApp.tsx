@@ -8,8 +8,8 @@ const PortFolioApp: React.FC = () => {
     return (
         <>
             <Navbar />
-            <Home />
-            {/* <Portfolio /> */}
+            {/* <Home /> */}
+            <Portfolio />
             {/* <ContactMe /> */}
             <Footer />
         </>
