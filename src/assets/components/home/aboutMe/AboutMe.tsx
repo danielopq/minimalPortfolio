@@ -1,6 +1,10 @@
 import './aboutMe.css';
 import StandardButton from '../../shared/defaultButton/StandardButton';
 
+/**
+ * Renders the "About Me" section on the home page, providing information about the developer.
+ * @returns {JSX.Element} - The "About Me" section component.
+ */
 const AboutMe: React.FC = () => {
     return (
         <section id="aboutMe">
