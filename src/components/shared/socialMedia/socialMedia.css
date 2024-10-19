@@ -22,14 +22,26 @@
     opacity: 0.3;
 }
 
-#gitHub-bt{
-    background-image: url('./img/github.svg');
+.gitHub-bt-light{
+    background-image: url('./img/github-light.svg');
 }
 
-#twitter-bt{
-    background-image: url('./img/twitter.svg');
+.gitHub-bt-dark{
+    background-image: url('./img/github-dark.svg');
 }
 
-#linkedin-bt{
-    background-image: url('./img/linkedin.svg');
+.twitter-bt-light{
+    background-image: url('./img/twitter-light.svg');
+}
+
+.twitter-bt-dark{
+    background-image: url('./img/twitter-dark.svg');
+}
+
+.linkedin-bt-light{
+    background-image: url('./img/linkedin-light.svg');
+}
+
+.linkedin-bt-dark{
+    background-image: url('./img/linkedin-dark.svg');
 }

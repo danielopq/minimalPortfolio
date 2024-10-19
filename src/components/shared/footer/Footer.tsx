@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
                     <button onClick={() => changeSection('portfolio')}>PORTFOLIO</button>
                     <button onClick={() => changeSection('contact')}>CONTACT ME</button>
                 </div>
-                <SocialMedia />
+                <SocialMedia mode='light'/>
             </div>
         </footer>
     )
