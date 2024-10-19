@@ -8,17 +8,15 @@
     align-items: flex-start;
     justify-content: space-between;
     border-top: solid 1px rgba(51,50,61,0.15);
-    border: solid 1px red;
 }
 
 #contactForm-content{
     width: 635px;
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    border: solid 1px red;
 }
 
 .formElement{
@@ -35,22 +33,9 @@
     width: inherit;
     height: 30px;
     margin-bottom: 8px;
-    font: 400 13px/30px 'PublicSans-Regular';
+    font: 700 13px/30px 'PublicSans-Regular';
     color: var(--darkGrey);
     opacity: 0.8;
-}
-
-.formElement input,textarea{
-    width: inherit;
-    padding: 9px 16px;
-    background-color: rgba(151,151,151,0.1);
-    color: rgba(51,50,61,0.4);
-    border: none;
-    outline: none;
-}
-
-.formElement input::placeholder,textarea::placeholder{
-    color: rgba(51,50,61,0.4);
 }
 
 .formElement input{

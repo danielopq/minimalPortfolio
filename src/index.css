@@ -57,6 +57,22 @@ nav{
     margin: 0px;
 }
 
+input,textarea{
+    width: inherit;
+    padding: 9px 16px;
+    background-color: rgba(151,151,151,0.1);
+    color: var(--darkGrey);
+    border: none;
+}
+
+input::placeholder,textarea::placeholder{
+    color: rgba(51,50,61,0.4);
+}
+
+input:focus,textarea:focus{
+    outline: solid 1px var(--cyan);;
+}
+
 h1{
     padding: 0px;
     margin: 0px;

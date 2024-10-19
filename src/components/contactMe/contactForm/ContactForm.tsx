@@ -1,5 +1,10 @@
 import './contactForm.css'
+import StandardButton from '../../shared/defaultButton/StandardButton';
 
+/**
+ * Renders the "Contact Me" form, allowing users to input their name, email address, and message.
+ * @returns {JSX.Element} - The ContactForm component.
+ */
 const ContactForm: React.FC = () => {
     return (
         <section id="contactForm">
@@ -17,6 +22,7 @@ const ContactForm: React.FC = () => {
                     <label htmlFor="message">Message</label>
                     <textarea id="message" name="message" placeholder='How can I help?'/>
                 </div>
+                <StandardButton value='SEND MESSAGE' mode='darkButton'/>
             </div>
         </section>
     )
