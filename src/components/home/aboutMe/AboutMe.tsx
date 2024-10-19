@@ -28,11 +28,6 @@ const AboutMe: React.FC = () => {
                     <StandardButton value='GO TO PORTFOLIO' mode='lightButton'/>
                 </div>
             </div>
-            <div id="aboutMe-bottomSide">
-                <h2>Interested in doing a project together?</h2>
-                <div id="aboutMe-line"></div>
-                <StandardButton value='CONTACT ME' mode='lightButton'/>
-            </div>
         </section>
     )
 }

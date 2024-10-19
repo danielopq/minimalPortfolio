@@ -1,0 +1,19 @@
+#contactFooter{
+    width: inherit;
+    height: 84px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contactFooter h2{
+    width: 350px;
+    height: inherit;
+}
+
+#contactFooter-line{
+    width: 534px;
+    height: 1px;
+    background-color: #979797;
+}
