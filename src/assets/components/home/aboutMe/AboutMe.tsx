@@ -1,4 +1,5 @@
 import './aboutMe.css';
+import StandardButton from '../../shared/defaultButton/StandardButton';
 
 const AboutMe: React.FC = () => {
     return (
@@ -20,13 +21,13 @@ const AboutMe: React.FC = () => {
                         going for a walk, run or cycling. I’d love you to check
                         out my work.
                     </p>
-                    <button>GO TO PORTFOLIO</button>
+                    <StandardButton value='GO TO PORTFOLIO'/>
                 </div>
             </div>
             <div id="aboutMe-bottomSide">
                 <h2>Interested in doing a project together?</h2>
                 <div id="aboutMe-line"></div>
-                <button>CONTACT ME</button>
+                <StandardButton value='CONTACT ME'/>
             </div>
         </section>
     )
