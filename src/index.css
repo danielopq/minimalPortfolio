@@ -9,19 +9,19 @@
 
 @font-face {
     font-family: 'IbarraRealNova-Bold';
-    src: url('../src/fonts/IbarraRealNova-Bold.woff')format('woff');
+    src: url('../src/assets/fonts/IbarraRealNova-Bold.woff')format('woff');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'IbarraRealNova-Regular';
-    src: url('../src/fonts/IbarraRealNova-Regular.woff')format('woff');
+    src: url('../src/assets/fonts/IbarraRealNova-Regular.woff')format('woff');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'PublicSans-Regular';
-    src: url('../src/fonts/PublicSans-Regular.woff')format('woff');
+    src: url('../src/assets/fonts/PublicSans-Regular.woff')format('woff');
     font-weight: 400;
 }
 
