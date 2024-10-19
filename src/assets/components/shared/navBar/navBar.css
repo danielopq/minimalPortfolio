@@ -24,14 +24,20 @@
     letter-spacing: 2px;
     background-color: transparent;
     border: none;
+    transition: opacity 0.3s ease;
+}
+
+.navBarInactiveLink{
+    color:var(--darkBlue);
     cursor: pointer;
+}
+
+.navBarInactiveLink:hover{
+    opacity: 0.3;
 }
 
 .navBarActiveLink{
     color:var(--cyan);
 }
 
-.navBarInactiveLink{
-    color:var(--darkBlue);
-}
 
