@@ -1,5 +1,5 @@
-import Home from "./assets/img/components/home/Home";
-import Navbar from "./assets/img/components/shared/navBar/NavBar";
+import Home from "./assets/components/home/Home";
+import Navbar from "./assets/components/shared/navBar/NavBar";
 
 const PortFolioApp: React.FC = () => {
     return (
