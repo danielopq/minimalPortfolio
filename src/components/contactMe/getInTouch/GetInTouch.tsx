@@ -1,5 +1,10 @@
 import './getInTouch.css';
+import SocialMedia from '../../shared/socialMedia/SocialMedia';
 
+/**
+ *  Renders the "Get in Touch" section, which is part of the "Contact Me" page.
+ * @returns {JSX.Element} - GetInTouch component. 
+ */
 const GetInTouch: React.FC = () => {
     return (
         <section id="getInTouch">
@@ -16,6 +21,7 @@ const GetInTouch: React.FC = () => {
                     to detail. Please do feel free to check out my online profiles
                     below and get in touch using the form.
                 </p>
+                <SocialMedia mode='dark'/>
             </div>
         </section>
     )
