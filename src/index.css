@@ -1,3 +1,12 @@
+:root{
+    --cyan: #5FB4A2; /*rgb(95, 180, 162) - hsl(167,36%,54%)*/
+    --darkBlue: #203A4C; /* rgb(32, 58, 76) - hsl(205, 41%, 21%) */
+    --lightGrey: #FAFAFA; /* rgb(250, 250, 250) - hsl(0, 0%, 98%) */
+    --grey: #EAEAEB; /* rgb(234, 234, 235) - hsl(240, 2%, 92%) */
+    --darkGrey: #33323D; /* rgb(51, 50, 61) - hsl(245, 10%, 22%) */
+    --red: #F43030; /* rgb(244, 48, 48) - hsl(0, 90%, 57%)  */
+}
+
 *{
     box-sizing: border-box;
 }
