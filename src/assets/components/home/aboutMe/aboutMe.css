@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 150px;
-    border: solid 1px red;
 }
 
 #aboutMe-topSide{
@@ -43,7 +42,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: solid 1px red;
 }
 
 #aboutMe-bottomSide h2{
