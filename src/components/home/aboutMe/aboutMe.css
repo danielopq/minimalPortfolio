@@ -1,18 +1,10 @@
 #aboutMe{
     width: 1110px;
-    height: 834px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 150px 0px;
-}
-
-#aboutMe-topSide{
-    width: inherit;
-    height: 800px;
+    height: 600px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 150px 0px;
 }
 
 #aboutMe-mainPic{
@@ -26,8 +18,8 @@
     height: 600px;
     padding-top: 50px;
     text-align: left;
-    border-top: solid 1px #979797;
-    border-bottom: solid 1px #979797;
+    border-top: solid 1px rgba(151,151,151,0.15);
+    border-bottom: solid 1px rgba(151,151,151,0.15);
 }
 
 #aboutMe-mainContent p{

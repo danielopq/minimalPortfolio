@@ -8,7 +8,6 @@ import StandardButton from '../../shared/defaultButton/StandardButton';
 const AboutMe: React.FC = () => {
     return (
         <section id="aboutMe">
-            <div id="aboutMe-topSide">
                 <div id="aboutMe-mainPic"></div>
                 <div id="aboutMe-mainContent">
                     <h2>About Me</h2>
@@ -27,7 +26,6 @@ const AboutMe: React.FC = () => {
                     </p>
                     <StandardButton value='GO TO PORTFOLIO' mode='lightButton'/>
                 </div>
-            </div>
         </section>
     )
 }
