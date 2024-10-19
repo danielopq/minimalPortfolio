@@ -1,4 +1,4 @@
-.defaultButton{
+.standardButton{
     height: 48px;
     font: 400 12px/48pxpx 'PublicSans-Regular';
     letter-spacing: 2px;
@@ -10,7 +10,7 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.defaultButton:hover{
+.standardButton:hover{
     background-color: var(--darkGrey);
     color: var(--lightGrey);
 }

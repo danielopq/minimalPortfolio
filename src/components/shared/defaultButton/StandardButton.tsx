@@ -14,7 +14,7 @@ interface StandardButtonProps{
  */
 const StandardButton:React.FC<StandardButtonProps> =({value,disabled=false})=>{
     return(
-        <button className='defaultButton' disabled={disabled}>{value.toUpperCase()}</button>
+        <button className='standdardButton' disabled={disabled}>{value.toUpperCase()}</button>
     )
 }
 export default StandardButton;
