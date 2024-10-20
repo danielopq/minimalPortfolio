@@ -1,0 +1,22 @@
+.detailsNavBarButton{
+    width: 162px;
+    height: 66px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.buttonArrowIcon{
+    width: 40px;
+    height: inherit;
+    border: solid 1px red;
+}
+
+.buttonLegend{
+    width: 122px;
+    height: inherit;
+    border: solid 1px red;
+}

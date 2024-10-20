@@ -1,6 +1,18 @@
 #detailsNavBar{
-    width: inherit;
+    width: 1110px;
     height: 132px;
     margin-bottom: 115px;
-    border: solid 1px red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: solid 1px rgba(151,151,151,0.15);
+    border-bottom: solid 1px rgba(151,151,151,0.15);
 }
+
+#detailsNavBarSeparator{
+    height: inherit;
+    width: 1px;
+    background-color: rgba(151,151,151,0.15);
+}
+
