@@ -20,7 +20,7 @@
 .overview-mainPic{
     width: 540px;
     height: inherit;
-    background: url('../../../assets/img/portfolio/Manage/desktop/overview-mainpic.jpg') center/540px no-repeat;
+    background: url('../img/Manage/desktop/overview-mainpic.jpg') center/540px no-repeat;
 }
 
 .overview-mainContent{

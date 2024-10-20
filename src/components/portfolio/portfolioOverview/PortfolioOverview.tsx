@@ -1,19 +1,20 @@
 import './portfolioOverview.css';
 import StandardButton from '../../shared/standardButton/StandardButton';
 
-const PortfolioOverview: React.FC = () => {
+interface PortfolioOverview {
+    title:string;
+    overviewText:string;
+    index:number;
+}
+
+const PortfolioOverview: React.FC<PortfolioOverview> = ({title,overviewText,index}) => {
     return (
-        <section className="overview rightSide">
+        <section className={(index % 2) == 0 ? 'overview leftSide' : 'overview rightSide'} >
             <div className="overview-mainPic"></div>
             <div className="overview-mainContent">
                 <div>
-                    <h2>Manage</h2>
-                    <p className='mainText'>
-                        This project required me to build a fully responsive
-                        landing page to the designs provided. I used HTML5,
-                        along with CSS Grid and JavaScript for the areas that
-                        required interactivity, such as the testimonial slider.
-                    </p>
+                    <h2>{title}</h2>
+                    <p className='mainText'>{overviewText}</p>
                     <StandardButton value='VIEW PROJECT' mode='lightButton' />
                 </div>
             </div>
