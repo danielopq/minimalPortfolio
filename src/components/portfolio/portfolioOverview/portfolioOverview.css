@@ -10,7 +10,7 @@
 .overview-mainPic{
     width: 540px;
     height: 600px;
-    background: url('./img/profilePic-desktop.jpg') center/540px no-repeat;
+    background: url('../../../assets/img/portfolio/Manage/image-portfolio-manage.jpg') center/540px no-repeat;
 }
 
 .overview-mainContent{
