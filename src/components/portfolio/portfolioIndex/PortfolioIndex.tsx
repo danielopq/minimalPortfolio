@@ -15,7 +15,7 @@ const PortfolioIndex: React.FC = () => {
     const projectList: JSX.Element[] = [];
 
     for(let i:number=0;i < portfolioData.length ;i++){
-        projectList.push(<PortfolioOverview key={i} title={portfolioData[i].title}  overviewText={portfolioData[i].title} index={i}/>)
+        projectList.push(<PortfolioOverview key={i} title={portfolioData[i].title}  overviewText={portfolioData[i].overviewText} index={i}/>)
     }
 
     return (

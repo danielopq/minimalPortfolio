@@ -20,7 +20,9 @@
 .overview-mainPic{
     width: 540px;
     height: inherit;
-    background: url('../img/Manage/desktop/overview-mainpic.jpg') center/540px no-repeat;
+    background-position: center;
+    background-size: 540px;
+    background-repeat: no-repeat;
 }
 
 .overview-mainContent{
@@ -36,6 +38,7 @@
 }
 
 .overview-mainContent p{
+    height: 150px;
     margin: 28px 0px 24px;
     opacity: 0.8;
 }
