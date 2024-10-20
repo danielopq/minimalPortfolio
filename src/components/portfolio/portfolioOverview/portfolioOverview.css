@@ -1,0 +1,28 @@
+.overview{
+    width: 1110px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 150px 0px;
+}
+
+.overview-mainPic{
+    width: 540px;
+    height: 600px;
+    background: url('./img/profilePic-desktop.jpg') center/540px no-repeat;
+}
+
+.overview-mainContent{
+    width: 350px;
+    height: 600px;
+    padding-top: 50px;
+    text-align: left;
+    border-top: solid 1px rgba(151,151,151,0.15);
+    border-bottom: solid 1px rgba(151,151,151,0.15);
+}
+
+.overview-mainContent p{
+    margin: 28px 0px 24px;
+    opacity: 0.8;
+}
