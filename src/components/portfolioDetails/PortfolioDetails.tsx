@@ -6,7 +6,7 @@ import ContactFooter from '../shared/contactFooter/ContactFooter';
 const PortfolioDetails:React.FC = ()=>{
     return(
         <main id="portfolioDetails">
-            <ProjectDetails/>
+            <ProjectDetails projectIndex={1}/>
             <DetailsNavBar/>
             <ContactFooter/>
         </main>
