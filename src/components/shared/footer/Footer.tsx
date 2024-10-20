@@ -17,9 +17,9 @@ const Footer: React.FC<FooterProps> = ({changeSection}) => {
         <footer id='mainFooter'>
             <div id="mainFooterContainer">
                 <div id="mainFooterlinks">
-                    <button onClick={() => changeSection('/')}>HOME</button>
-                    <button onClick={() => changeSection('/portfolio')}>PORTFOLIO</button>
-                    <button onClick={() => changeSection('/contact')}>CONTACT ME</button>
+                    <button onClick={() => changeSection('home')}>HOME</button>
+                    <button onClick={() => changeSection('portfolio')}>PORTFOLIO</button>
+                    <button onClick={() => changeSection('contact')}>CONTACT ME</button>
                 </div>
                 <SocialMedia mode='light'/>
             </div>

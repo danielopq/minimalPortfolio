@@ -5,29 +5,32 @@ import Portfolio from "./components/portfolio/Portfolio";
 import ContactMe from "./components/contactMe/ContactMe";
 import PortfolioDetails from './components/portfolioDetails/PortfolioDetails';
 import Footer from "./components/shared/footer/Footer";
+import { useState } from 'react';
 
 const PortFolioApp: React.FC = () => {
 
     const navigate = useNavigate();
+    const [currentSection, setCurrentSection] = useState<string>('home')
 
     /**
      * Navigates to the specified section.
      * @param {string} section - The path of the section to navigate to.
      */
-    const changeSection = (section: string): void => {
-        navigate(section);
+    const changeSection = (section:string): void => {
+        section === 'home' ? navigate('/') : navigate(`/${section}`);
+        setCurrentSection(section);
     }
 
     return (
         <>
-            <Navbar />
+            <Navbar selectedSection={currentSection} changeSection={changeSection} />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/details" element={<PortfolioDetails />} />
                 <Route path="/contact" element={<ContactMe />} />
             </Routes>
-            <Footer changeSection={changeSection}/>
+            <Footer changeSection={changeSection} />
         </>
 
     )
