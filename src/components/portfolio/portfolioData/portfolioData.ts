@@ -5,10 +5,6 @@ export interface Project{
     technologyKeyWords:string;
     backgroundText:string;
     url:string;
-    overviewMainPic:string;
-    detailsMainPic:string;
-    preview01:string;
-    preview02:string; 
 }
 
 export type ProjectList = Project []; 
@@ -20,11 +16,7 @@ const portfolioData:ProjectList = [
         developmentKeyWords: 'Interaction Design / Front End Development',
         technologyKeyWords: 'HTML / CSS / JS',
         backgroundText: 'This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
-        url: 'https://www.linkedin.com/in/danielmartinezduque/',
-        overviewMainPic:'',
-        detailsMainPic:'',
-        preview01:'',
-        preview02:'',        
+        url: 'https://www.linkedin.com/in/danielmartinezduque/',       
     },
     {
         title:'Bookmark',
@@ -32,11 +24,7 @@ const portfolioData:ProjectList = [
         developmentKeyWords: 'Interaction Design / Front End Development',
         technologyKeyWords: 'HTML / CSS / JS',
         backgroundText: 'This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
-        url: 'https://www.linkedin.com/in/danielmartinezduque/',
-        overviewMainPic:'',
-        detailsMainPic:'',
-        preview01:'',
-        preview02:'',        
+        url: 'https://www.linkedin.com/in/danielmartinezduque/',       
     },
     {
         title:'Insurance',
@@ -44,11 +32,7 @@ const portfolioData:ProjectList = [
         developmentKeyWords: 'Interaction Design / Front End Development',
         technologyKeyWords: 'HTML / CSS / JS',
         backgroundText: 'This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
-        url: 'https://www.linkedin.com/in/danielmartinezduque/',
-        overviewMainPic:'',
-        detailsMainPic:'',
-        preview01:'',
-        preview02:'',        
+        url: 'https://www.linkedin.com/in/danielmartinezduque/',       
     },
     {
         title:'Fylo',
@@ -56,11 +40,7 @@ const portfolioData:ProjectList = [
         developmentKeyWords: 'Interaction Design / Front End Development',
         technologyKeyWords: 'HTML / CSS / JS',
         backgroundText: 'This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
-        url: 'https://www.linkedin.com/in/danielmartinezduque/',
-        overviewMainPic:'',
-        detailsMainPic:'',
-        preview01:'',
-        preview02:'',        
+        url: 'https://www.linkedin.com/in/danielmartinezduque/',       
     },
 ]
 
