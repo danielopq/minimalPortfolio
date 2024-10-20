@@ -1,5 +1,5 @@
 import './portfolioIndex.css';
-import portfolioData from '../portfolioData/portfolioData';
+import portfolioData from '../../shared/portfolioData/portfolioData';
 import PortfolioOverview from '../portfolioOverview/PortfolioOverview';
 
 
