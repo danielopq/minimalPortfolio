@@ -6,6 +6,11 @@ interface ProjectDetailsProps {
     projectIndex: number;
 }
 
+/**
+ * Displays the detailed information of a specific project.
+ * @param {ProjectDetailsProps} param0.projectIndex - Contains the index of the selected project.
+ * @returns {JSX.Element} - The rendered component displaying the project's details.
+ */
 const ProjectDetails: React.FC<ProjectDetailsProps> = ({ projectIndex }) => {
 
     const currentProject: Project = portfolioData[projectIndex];
@@ -24,7 +29,13 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ projectIndex }) => {
                         <StandardButton value='VIEW WEBSITE' mode='lightButton' />
                     </div>
                 </div>
-                <div id="projectDetails-description"></div>
+                <div id="projectDetails-description">
+                    <h3>Project Background</h3>
+                    <p className='mainText'>{backgroundText}</p>
+                    <h3>Static Previews</h3>
+                    <div id="previewPic01" className='previewPic' style={{ backgroundImage: `url("./img/${title}/preview01.jpg")`}}></div>
+                    <div id="previewPic02" className='previewPic' style={{ backgroundImage: `url("./img/${title}/preview02.jpg")`}}></div>
+                </div>
             </div>
         </section>
     )
