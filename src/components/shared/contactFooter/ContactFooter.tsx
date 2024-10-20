@@ -1,5 +1,5 @@
 import './contactFooter.css';
-import StandardButton from '../defaultButton/StandardButton';
+import StandardButton from '../standardButton/StandardButton';
 
 /**
  * Renders a contact footer section that appears on various parts of the website.

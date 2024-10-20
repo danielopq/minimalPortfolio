@@ -1,5 +1,5 @@
 import './aboutMe.css';
-import StandardButton from '../../shared/defaultButton/StandardButton';
+import StandardButton from '../../shared/standardButton/StandardButton';
 
 /**
  * Renders the "About Me" section on the home page, providing information about the developer.

@@ -1,5 +1,5 @@
 import './portfolioOverview.css';
-import StandardButton from '../../shared/defaultButton/StandardButton';
+import StandardButton from '../../shared/standardButton/StandardButton';
 
 const PortfolioOverview: React.FC = () => {
     return (

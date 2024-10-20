@@ -1,5 +1,5 @@
 import './contactForm.css'
-import StandardButton from '../../shared/defaultButton/StandardButton';
+import StandardButton from '../../shared/standardButton/StandardButton';
 
 /**
  * Renders the "Contact Me" form, allowing users to input their name, email address, and message.
