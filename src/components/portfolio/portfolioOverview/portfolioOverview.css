@@ -1,22 +1,35 @@
 .overview{
-    width: 1110px;
-    height: 600px;
+    width: 1015px;
+    height: 500px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    margin: 150px 0px;
+    margin: 40px 0px;
+}
+
+.leftSide{
+    float: left;
+    flex-direction: row;
+}
+
+.rightSide{
+    float: right;
+    flex-direction: row-reverse;
 }
 
 .overview-mainPic{
     width: 540px;
-    height: 600px;
-    background: url('../../../assets/img/portfolio/Manage/image-portfolio-manage.jpg') center/540px no-repeat;
+    height: inherit;
+    background: url('../../../assets/img/portfolio/Manage/desktop/overview-mainpic.jpg') center/540px no-repeat;
 }
 
 .overview-mainContent{
     width: 350px;
-    height: 600px;
-    padding-top: 50px;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     text-align: left;
     border-top: solid 1px rgba(151,151,151,0.15);
     border-bottom: solid 1px rgba(151,151,151,0.15);
