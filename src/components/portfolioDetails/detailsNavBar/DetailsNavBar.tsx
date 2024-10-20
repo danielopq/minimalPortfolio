@@ -4,9 +4,9 @@ import DetailsNavBarButton from '../../shared/detailsNavBarButton/DetailsNavBarB
 const DetailsNavBar:React.FC = () =>{
     return(
         <nav id="detailsNavBar">
-            <DetailsNavBarButton/>
+            <DetailsNavBarButton direction='left' projectTitle={'Manage'} />
             <div id="detailsNavBarSeparator"></div>
-            <DetailsNavBarButton/>
+            <DetailsNavBarButton direction='right' projectTitle={'Space Tourism'}/>
         </nav>
     )
 }

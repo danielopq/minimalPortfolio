@@ -1,22 +1,62 @@
 .detailsNavBarButton{
-    width: 162px;
+    width: auto;
     height: 66px;
     padding: 0px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+}
+
+.detailsNavBarButton:hover .legendProjectTitle {
+    color: var(--cyan);
+}
+
+.detailsNavBarButton:disabled{
+    opacity: 0.3;
+    cursor: default;
+}
+
+.detailsNavBarButton:disabled .legendProjectTitle {
+    color: inherit;
 }
 
 .buttonArrowIcon{
     width: 40px;
     height: inherit;
-    border: solid 1px red;
 }
 
 .buttonLegend{
-    width: 122px;
+    width: auto;
     height: inherit;
-    border: solid 1px red;
+}
+
+.leftDirection{
+    flex-direction: row;
+    text-align: left;
+}
+
+.leftArrowIcon{
+    background: url('./img/arrow-left.svg') left/8px no-repeat;
+}
+
+.rightDirection{
+    flex-direction:row-reverse;
+    text-align: right;
+}
+.rightArrowIcon{
+    background: url('./img/arrow-right.svg') right/8px no-repeat;
+}
+
+.legendProjectTitle{
+    font: 400 32px/36px 'IbarraRealNova-Regular';
+    letter-spacing: -0.29px;
+    color: var(--darkGrey);
+}
+
+.legendProjectDirection{
+    font: 400 16px/30px 'PublicSans-Regular';
+    color: var(--darkGrey);
+    opacity:0.5;
 }

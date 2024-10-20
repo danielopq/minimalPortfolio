@@ -97,7 +97,7 @@ h2{
 h3{
     padding: 0px;
     margin: 0px;
-    font: 700 32px/42px 'IbarraRealNova-Regular';
+    font: 400 32px/42px 'IbarraRealNova-Regular';
     letter-spacing: -0.29px;
     color: var(--darkGrey);
 }
