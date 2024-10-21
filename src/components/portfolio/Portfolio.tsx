@@ -15,7 +15,7 @@ interface PortfolioProps{
 const Portfolio:React.FC<PortfolioProps> = ({changeSection}) => {
     return (
         <main id="portfolio">
-            <PortfolioIndex/>
+            <PortfolioIndex changeSection={changeSection}/>
             <ContactFooter changeSection={changeSection}/>
         </main>
     )

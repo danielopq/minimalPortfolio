@@ -8,7 +8,6 @@ import Footer from "./components/shared/footer/Footer";
 import { useState } from 'react';
 
 const PortFolioApp: React.FC = () => {
-
     const navigate = useNavigate();
     const [currentSection, setCurrentSection] = useState<string>('home')
 
@@ -27,7 +26,7 @@ const PortFolioApp: React.FC = () => {
             <Routes>
                 <Route path="/" element={<Home changeSection={changeSection}/>} />
                 <Route path="/portfolio" element={<Portfolio changeSection={changeSection}/>} />
-                <Route path="/details" element={<PortfolioDetails />} />
+                <Route path="/details/:projectIndex" element={<PortfolioDetails changeSection={changeSection} />} />
                 <Route path="/contact" element={<ContactMe />} />
             </Routes>
             <Footer changeSection={changeSection} />

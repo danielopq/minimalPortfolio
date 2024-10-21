@@ -5,9 +5,10 @@ interface PortfolioOverview {
     title: string;
     overviewText: string;
     index: number;
+    changeSection:(section:string)=>void
 }
 
-const PortfolioOverview: React.FC<PortfolioOverview> = ({ title, overviewText, index }) => {
+const PortfolioOverview: React.FC<PortfolioOverview> = ({ title, overviewText, index, changeSection }) => {
 
     return (
         <section className={(index % 2) == 0 ? 'overview leftSide' : 'overview rightSide'} >
@@ -16,7 +17,7 @@ const PortfolioOverview: React.FC<PortfolioOverview> = ({ title, overviewText, i
                 <div>
                     <h2>{title}</h2>
                     <p className='mainText'>{overviewText}</p>
-                    <StandardButton value='VIEW PROJECT' mode='lightButton' />
+                    <StandardButton value='VIEW PROJECT' mode='lightButton' handleClick={()=>changeSection(`details/${index}`)}/>
                 </div>
             </div>
         </section>
