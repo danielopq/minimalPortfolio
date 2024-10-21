@@ -16,13 +16,13 @@ interface PortfolioDetailsProps{
  */
 const PortfolioDetails:React.FC<PortfolioDetailsProps> = ({changeSection})=>{
 
-    const { projectIndex } = useParams<{ projectIndex: string }>();
-    const projectIndexNumber = projectIndex ? parseInt(projectIndex, 10) : 0;
-    console.log(projectIndexNumber);
+    const { index } = useParams<{ index: string }>();
+    const projectIndex = index ? parseInt(index, 10) : 0;
+    console.log(projectIndex);
     return(
         <main id="portfolioDetails">
-            <ProjectDetails projectIndex={projectIndexNumber}/>
-            <DetailsNavBar/>
+            <ProjectDetails projectIndex={projectIndex}/>
+            <DetailsNavBar projectIndex={projectIndex}/>
             <ContactFooter changeSection={changeSection}/>
         </main>
     )
