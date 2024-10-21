@@ -26,7 +26,7 @@ const PortFolioApp: React.FC = () => {
             <Navbar selectedSection={currentSection} changeSection={changeSection} />
             <Routes>
                 <Route path="/" element={<Home changeSection={changeSection}/>} />
-                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/portfolio" element={<Portfolio changeSection={changeSection}/>} />
                 <Route path="/details" element={<PortfolioDetails />} />
                 <Route path="/contact" element={<ContactMe />} />
             </Routes>
