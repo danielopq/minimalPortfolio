@@ -1,11 +1,17 @@
 import './aboutMe.css';
 import StandardButton from '../../shared/standardButton/StandardButton';
 
+interface AboutMeProps{
+    changeSection:(section:string)=>void;
+}
+
 /**
  * Renders the "About Me" section on the home page, providing information about the developer.
+ * @param {ContactFooterProps} param0 - Props for the AboutMe component.
+ * @param {function} param0.changeSection - Function to navigate to the selected section.
  * @returns {JSX.Element} - The "About Me" section component.
  */
-const AboutMe: React.FC = () => {
+const AboutMe: React.FC<AboutMeProps> = ({changeSection}) => {
     return (
         <section id="aboutMe">
                 <div id="aboutMe-mainPic"></div>
@@ -24,7 +30,7 @@ const AboutMe: React.FC = () => {
                         going for a walk, run or cycling. I’d love you to check
                         out my work.
                     </p>
-                    <StandardButton value='GO TO PORTFOLIO' mode='lightButton'/>
+                    <StandardButton value='GO TO PORTFOLIO' mode='lightButton' handleClick={()=>changeSection('portfolio')}/>
                 </div>
         </section>
     )
