@@ -12,6 +12,7 @@ interface StandardButtonProps{
  * @param {standardButtonProps} props - The properties for the button.
  * @param {string} props.value - The text displayed on the button.
  * @param {boolean} [props.disabled=false] - Indicates whether the button is disabled. Defaults to `false`.
+ * @param {function} param0.handleClick - The function to be called when the button is clicked.
  * @returns {JSX.Element} The rendered standardButton component.
  */
 const StandardButton:React.FC<StandardButtonProps> =({value,mode,disabled=false,handleClick})=>{

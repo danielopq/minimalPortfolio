@@ -27,7 +27,7 @@ const portfolioData:ProjectList = [
         url: 'https://www.linkedin.com/in/danielmartinezduque/',       
     },
     {
-        title:'Insurance',
+        title:'Insure',
         overviewText: 'This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.',
         developmentKeyWords: 'Interaction Design / Front End Development',
         technologyKeyWords: 'HTML / CSS / JS',

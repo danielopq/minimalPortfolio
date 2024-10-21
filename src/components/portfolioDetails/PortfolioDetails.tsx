@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import ProjectDetails from './projectDetails/ProjectDetails';
 import DetailsNavBar from './detailsNavBar/DetailsNavBar';
 import ContactFooter from '../shared/contactFooter/ContactFooter';
+import { useState } from 'react';
 
 interface PortfolioDetailsProps{
     changeSection:(section:string)=>void
@@ -18,11 +19,19 @@ const PortfolioDetails:React.FC<PortfolioDetailsProps> = ({changeSection})=>{
 
     const { index } = useParams<{ index: string }>();
     const projectIndex = index ? parseInt(index, 10) : 0;
-    console.log(projectIndex);
+
+    const [currentProject,setCurrentProject] = useState<number>(projectIndex);
+    
+    const displayProject = (selectedProject:number):void=>{
+        setCurrentProject(selectedProject);
+    }
+
+
+
     return(
         <main id="portfolioDetails">
-            <ProjectDetails projectIndex={projectIndex}/>
-            <DetailsNavBar projectIndex={projectIndex}/>
+            <ProjectDetails projectIndex={currentProject}/>
+            <DetailsNavBar projectIndex={currentProject} displayProject={displayProject}/>
             <ContactFooter changeSection={changeSection}/>
         </main>
     )

@@ -5,33 +5,35 @@ import { useEffect, useState } from 'react';
 
 interface DetailsNavBarProps {
     projectIndex: number;
-    displayProject:(projectIndex:number)=>void
+    displayProject: (projectIndex: number) => void
 }
 
-interface projectTitlesInterf {
-    previous: number;
-    next: number;
-}
-
-const DetailsNavBar: React.FC<DetailsNavBarProps> = ({ projectIndex,displayProject }) => {
-    const [projectNavigation, setProjectNavigation] = useState<projectTitlesInterf>({ previous: 0, next: 2 });
-    const { previous, next } = projectNavigation;
+const DetailsNavBar: React.FC<DetailsNavBarProps> = ({ projectIndex, displayProject }) => {
+    const [currentProject, setCurrentProject] = useState<number>(projectIndex);
+    const [projectTitles, setProjectTitles] = useState({ previousTitle: '', nextTitle: '' })
+    const { previousTitle, nextTitle } = projectTitles;
 
     useEffect(() => {
-        if (projectIndex == 0) {
-            console.log('menos');
-        } else if (projectIndex == portfolioData.length) {
-            console.log('mas');
-        } else {
-            setProjectNavigation({ previous: (projectIndex - 1), next: (projectIndex + 1) });
-        }
+        navigateProjects(projectIndex);
     }, [projectIndex])
+
+    const navigateProjects = (selectedProject: number) => {
+        if (selectedProject === 0) {
+            setProjectTitles({ previousTitle: '', nextTitle: portfolioData[selectedProject + 1].title })
+        } else if (selectedProject === portfolioData.length - 1) {
+            setProjectTitles({ previousTitle: portfolioData[selectedProject - 1].title, nextTitle: '' })
+        } else {
+            setProjectTitles({ previousTitle: portfolioData[selectedProject - 1].title, nextTitle: portfolioData[selectedProject + 1].title })
+        }
+        displayProject(selectedProject);
+        setCurrentProject(selectedProject);
+    }
 
     return (
         <nav id="detailsNavBar">
-            <DetailsNavBarButton direction='left' projectTitle={portfolioData[previous].title}/>
+            <DetailsNavBarButton direction='left' projectTitle={previousTitle} handleClick={() => navigateProjects(currentProject - 1)} />
             <div id="detailsNavBarSeparator"></div>
-            <DetailsNavBarButton direction='right' projectTitle={portfolioData[next].title} />
+            <DetailsNavBarButton direction='right' projectTitle={nextTitle} handleClick={() => navigateProjects(currentProject + 1)} />
         </nav>
     )
 }
