@@ -1,11 +1,11 @@
-#homeHeader{
+#homeHeader {
     width: 1110px;
     height: 600px;
     margin-top: 54px;
     background: url('./img/homeHeader-desktop.jpg') center/1110px no-repeat;
 }
 
-#homeHeader > div{
+#homeHeader>div {
     width: 445px;
     height: 357px;
     float: left;
@@ -18,7 +18,28 @@
     background-color: white;
 }
 
-#homeHeader h1{
+#homeHeader h1 {
     width: 390px;
     color: var(--darkGrey);
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #homeHeader {
+        width: 688px;
+        margin-top: 47px;
+        background: url('./img/homeHeader-tablet.jpg') center/688px no-repeat;
+    }
+
+    #homeHeader>div {
+        width: 514px;
+        height: 278px;
+        margin-top: 322px;
+        padding-top: 56px;
+    }
+
+    #homeHeader h1 {
+        width: 458px;
+    }
 }
