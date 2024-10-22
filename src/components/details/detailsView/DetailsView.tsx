@@ -1,6 +1,7 @@
 import './detailsView.css';
 import StandardButton from '../../shared/standardButton/StandardButton';
 import portfolioData, { Project } from '../../shared/portfolioData/portfolioData';
+import {loadWebsite} from '../../utils/utils';
 
 interface DetailsViewProps {
     projectIndex: number;
@@ -26,7 +27,7 @@ const DetailsView: React.FC<DetailsViewProps> = ({ projectIndex }) => {
                         <p className='detailsOverviewText'>{overviewText}</p>
                         <p className='keyWords'>{developmentKeyWords}</p>
                         <p className='keyWords'>{technologyKeyWords}</p>
-                        <StandardButton value='VIEW WEBSITE' mode='lightButton' />
+                        <StandardButton value='VIEW WEBSITE' mode='lightButton' handleClick={() => loadWebsite(url)}/>
                     </div>
                 </div>
                 <div id="detailsView-description">

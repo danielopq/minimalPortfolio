@@ -1,4 +1,5 @@
 import './socialMedia.css';
+import {loadWebsite} from '../../utils/utils';
 
 interface SocialMediaProps{
     mode: 'dark' | 'light';
@@ -13,14 +14,6 @@ interface SocialMediaProps{
  * @returns {JSX.Element} A component that displays social media buttons.
  */
 const SocialMedia: React.FC<SocialMediaProps> = ({mode}) => {
-
-    /**
-    * Opens the specified external website.
-    * @param {string} website - The URL of the website to open.
-    */
-    const loadWebsite = (website: string): void => {
-        window.open(website, '_blank');
-    }
 
     return (
         <div id="socialMedia">
