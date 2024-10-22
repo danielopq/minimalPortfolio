@@ -5,11 +5,18 @@ import Portfolio from "./components/portfolio/Portfolio";
 import ContactMe from "./components/contactMe/ContactMe";
 import Details from './components/details/Details';
 import Footer from "./components/shared/footer/Footer";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const PortFolioApp: React.FC = () => {
+    
     const navigate = useNavigate();
-    const [currentSection, setCurrentSection] = useState<string>('home')
+    const [currentSection, setCurrentSection] = useState<string>(() => {
+        return localStorage.getItem('currentSection') || 'home';
+    });
+
+    useEffect(() => {
+        localStorage.setItem('currentSection', currentSection);
+    }, [currentSection]);
 
     /**
      * Navigates to the specified section.
