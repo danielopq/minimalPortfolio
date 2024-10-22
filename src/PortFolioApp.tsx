@@ -3,7 +3,7 @@ import Navbar from "./components/shared/navBar/NavBar";
 import Home from "./components/home/Home";
 import Portfolio from "./components/portfolio/Portfolio";
 import ContactMe from "./components/contactMe/ContactMe";
-import PortfolioDetails from './components/portfolioDetails/PortfolioDetails';
+import Details from './components/details/Details';
 import Footer from "./components/shared/footer/Footer";
 import { useState } from 'react';
 
@@ -26,7 +26,7 @@ const PortFolioApp: React.FC = () => {
             <Routes>
                 <Route path="/" element={<Home changeSection={changeSection}/>} />
                 <Route path="/portfolio" element={<Portfolio changeSection={changeSection}/>} />
-                <Route path="/details/:index" element={<PortfolioDetails changeSection={changeSection} />} />
+                <Route path="/details/:index" element={<Details changeSection={changeSection} />} />
                 <Route path="/contact" element={<ContactMe />} />
             </Routes>
             <Footer changeSection={changeSection} />

@@ -1,26 +1,26 @@
-import './projectDetails.css';
+import './detailsView.css';
 import StandardButton from '../../shared/standardButton/StandardButton';
 import portfolioData, { Project } from '../../shared/portfolioData/portfolioData';
 
-interface ProjectDetailsProps {
+interface DetailsViewProps {
     projectIndex: number;
 }
 
 /**
  * Displays the detailed information of a specific project.
- * @param {ProjectDetailsProps} param0.projectIndex - Contains the index of the selected project.
+ * @param {DetailsViewProps} param0.projectIndex - Contains the index of the selected project.
  * @returns {JSX.Element} - The rendered component displaying the project's details.
  */
-const ProjectDetails: React.FC<ProjectDetailsProps> = ({ projectIndex }) => {
+const DetailsView: React.FC<DetailsViewProps> = ({ projectIndex }) => {
 
     const currentProject: Project = portfolioData[projectIndex];
     const { title, overviewText, developmentKeyWords, technologyKeyWords, backgroundText, url } = currentProject;
 
     return (
-        <section id="projectDetails">
-            <div id="projectDetails-mainPic" style={{ backgroundImage: `url("./img/${title}/details-mainPic.jpg")` }}></div>
-            <div id="projectDetails-content">
-                <div id="projectDetails-overview">
+        <section id="detailsView">
+            <div id="detailsView-mainPic" style={{ backgroundImage: `url("./img/${title}/details-mainPic.jpg")` }}></div>
+            <div id="detailsView-content">
+                <div id="detailsView-overview">
                     <div>
                         <h2>{title}</h2>
                         <p className='detailsOverviewText'>{overviewText}</p>
@@ -29,7 +29,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ projectIndex }) => {
                         <StandardButton value='VIEW WEBSITE' mode='lightButton' />
                     </div>
                 </div>
-                <div id="projectDetails-description">
+                <div id="detailsView-description">
                     <h3>Project Background</h3>
                     <p className='mainText'>{backgroundText}</p>
                     <h3>Static Previews</h3>
@@ -40,4 +40,4 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ projectIndex }) => {
         </section>
     )
 }
-export default ProjectDetails;
+export default DetailsView;
