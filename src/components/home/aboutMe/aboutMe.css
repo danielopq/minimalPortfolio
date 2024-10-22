@@ -26,3 +26,25 @@
     margin: 28px 0px 24px;
     opacity: 0.8;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #aboutMe{
+        width: 689px;
+        margin: 96px 0px;
+    }
+    
+    #aboutMe-mainPic{
+        width: 281px;
+        background: url('./img/profilePic-tablet.jpg') center/281px no-repeat;
+    }
+    
+    #aboutMe-mainContent{
+        width: 339px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
