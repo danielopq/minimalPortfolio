@@ -40,3 +40,22 @@
     opacity: 0.3;
 }
 
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #mainFooter{
+        width: 768px;
+        height: 80px;
+        padding: 24px 39px;
+    }
+    
+    #mainFooterContainer{
+        width: 689px;
+        height: 32px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
+

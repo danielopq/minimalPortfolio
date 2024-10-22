@@ -40,7 +40,6 @@
     color:var(--cyan);
 }
 
-
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
