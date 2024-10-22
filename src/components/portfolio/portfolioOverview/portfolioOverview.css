@@ -1,4 +1,4 @@
-.overview{
+.overview {
     width: 1015px;
     height: 500px;
     display: flex;
@@ -7,17 +7,17 @@
     margin: 40px 0px;
 }
 
-.leftSide{
+.leftSide {
     float: left;
     flex-direction: row;
 }
 
-.rightSide{
+.rightSide {
     float: right;
     flex-direction: row-reverse;
 }
 
-.overview-mainPic{
+.overview-mainPic {
     width: 540px;
     height: inherit;
     background-position: center;
@@ -25,7 +25,7 @@
     background-repeat: no-repeat;
 }
 
-.overview-mainContent{
+.overview-mainContent {
     width: 350px;
     height: inherit;
     display: flex;
@@ -33,12 +33,41 @@
     align-items: center;
     justify-content: center;
     text-align: left;
-    border-top: solid 1px rgba(151,151,151,0.15);
-    border-bottom: solid 1px rgba(151,151,151,0.15);
+    border-top: solid 1px rgba(151, 151, 151, 0.15);
+    border-bottom: solid 1px rgba(151, 151, 151, 0.15);
 }
 
-.overview-mainContent p{
+.overview-mainContent p {
     height: 150px;
     margin: 28px 0px 24px;
     opacity: 0.8;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .overview {
+        width: 689px;
+        height: 418px;
+    }
+
+    .overview-mainPic {
+        width: 339px;
+        background-size: 339px;
+    }
+
+    .overview-mainContent {
+        width: 281px;
+    }
+
+    .overview-mainContent p {
+        height: 180px;
+        margin: 28px 0px 35px;
+        font: 400 15px/30px 'PublicSans-Regular';
+        opacity: 0.8;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}

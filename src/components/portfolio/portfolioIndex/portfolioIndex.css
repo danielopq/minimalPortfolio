@@ -1,5 +1,18 @@
-#portfolioIndex{
+#portfolioIndex {
     width: 1110px;
     height: auto;
     margin: 54px 0px 150px;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #portfolioIndex {
+        width: 689px;
+        margin: 54px 0px 96px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
