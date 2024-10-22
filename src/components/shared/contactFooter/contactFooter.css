@@ -18,3 +18,22 @@
     height: 1px;
     background-color: rgba(151,151,151,0.15);
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #contactFooter{
+        width: 689px;
+        height: 84px;
+        margin-bottom: 96px;
+    }
+    
+    
+    #contactFooter-line{
+        width: 113px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}

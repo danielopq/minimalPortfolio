@@ -88,7 +88,7 @@ h1{
 h2{
     padding: 0px;
     margin: 0px;
-    font: 700 42px/40px 'IbarraRealNova-Bold';
+    font: 700 40px/42px 'IbarraRealNova-Bold';
     letter-spacing: -0.36px;
     color: var(--darkGrey);
 }
