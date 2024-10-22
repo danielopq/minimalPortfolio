@@ -46,3 +46,19 @@
     resize: none;
     height: 96px!important;
 }
+
+.formatError{
+    border: 1px solid var(--red);
+}
+
+.formatError:focus,.formatError:focus{
+    border: 1px solid var(--red);
+    outline: 1px solid var(--red);
+}
+
+.formErrorMsg{
+    height: 12px;
+    margin-top: 4px;
+    font: 700 10px/12px 'PublicSans-Regular';
+    color: var(--red);
+}
