@@ -18,7 +18,7 @@ const DetailsView: React.FC<DetailsViewProps> = ({ projectIndex }) => {
 
     return (
         <section id="detailsView">
-            <div id="detailsView-mainPic" style={{ backgroundImage: `url("./img/${title}/details-mainPic.jpg")` }}></div>
+            <div id="detailsView-mainPic" style={{ backgroundImage: `url("/img/${title}/details-mainPic.jpg")` }}></div>
             <div id="detailsView-content">
                 <div id="detailsView-overview">
                     <div>
@@ -33,8 +33,8 @@ const DetailsView: React.FC<DetailsViewProps> = ({ projectIndex }) => {
                     <h3>Project Background</h3>
                     <p className='mainText'>{backgroundText}</p>
                     <h3>Static Previews</h3>
-                    <div id="previewPic01" className='previewPic' style={{ backgroundImage: `url("./img/${title}/preview01.jpg")`}}></div>
-                    <div id="previewPic02" className='previewPic' style={{ backgroundImage: `url("./img/${title}/preview02.jpg")`}}></div>
+                    <div id="previewPic01" className='previewPic' style={{ backgroundImage: `url("/img/${title}/preview01.jpg")`}}></div>
+                    <div id="previewPic02" className='previewPic' style={{ backgroundImage: `url("/img/${title}/preview02.jpg")`}}></div>
                 </div>
             </div>
         </section>

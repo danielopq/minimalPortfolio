@@ -25,8 +25,6 @@ const Details:React.FC<DetailsProps> = ({changeSection})=>{
         setCurrentProject(selectedProject);
     }
 
-
-
     return(
         <main id="Details">
             <DetailsView projectIndex={currentProject}/>
