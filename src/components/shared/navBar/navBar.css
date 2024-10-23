@@ -40,6 +40,39 @@
     color:var(--cyan);
 }
 
+#navBar-mobileMenuIcon{
+    width:24px;
+    height: 32px;
+    border: none;
+    background-color: transparent;
+    float:right;
+    cursor: pointer;
+}
+
+.mobileMenuIcon-burger{
+    background: url('./img/hamburger.svg') center/24px no-repeat;
+}
+
+.mobileMenuIcon-close{
+    background: url('./img/close.svg') center/18px no-repeat;
+}
+
+#navBarMobileMenu{
+    width: 100vw;
+    height: 100vh;
+    z-index: 101;
+    position:fixed;
+    background-color: rgba(0,0,0,0.8);
+    top:70px;
+}
+
+.showNavBarMobileMenu{
+    display: block;
+}
+.hideNavBarMobileMenu{
+    display: none;
+}
+
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -49,4 +82,16 @@
     }
 }
 
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #navBar{
+        width: 311px;
+        margin-top: 32px;
+    }
+    
+    #navBarLinks{
+       display: none;
+    }
+}
 
