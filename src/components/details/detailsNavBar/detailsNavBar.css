@@ -16,3 +16,16 @@
     background-color: rgba(151,151,151,0.15);
 }
 
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #detailsNavBar{
+        width: 689px;
+        margin-bottom: 80px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
+
