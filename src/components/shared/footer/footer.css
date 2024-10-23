@@ -1,5 +1,5 @@
 #mainFooter{
-    width: inherit;
+    width: 100vw;
     height: 80px;
     display: flex;
     align-items: center;
@@ -45,11 +45,6 @@
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    #mainFooter{
-        width: 100vw;
-        height: 80px;
-    }
-    
     #mainFooterContainer{
         width: 689px;
         height: 32px;
@@ -60,7 +55,6 @@
 
 @media screen and (max-width:767px) {
     #mainFooter{
-        width: 100dvw;
         height: 354px;
     }
     
