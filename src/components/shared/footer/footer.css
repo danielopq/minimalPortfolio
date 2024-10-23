@@ -1,7 +1,9 @@
 #mainFooter{
     width: inherit;
     height: 80px;
-    padding: 24px 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--darkGrey);
 }
 
@@ -44,9 +46,8 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     #mainFooter{
-        width: 768px;
+        width: 100vw;
         height: 80px;
-        padding: 24px 39px;
     }
     
     #mainFooterContainer{
@@ -57,5 +58,24 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #mainFooter{
+        width: 100dvw;
+        height: 354px;
+    }
+    
+    #mainFooterContainer{
+        width: 104px;
+        height: 242px;
+        padding: 72px 0px 0px;
+        flex-direction: column;
+        background: url('./img/logo-grey.svg') top/61px no-repeat;
+    }
+    
+    #mainFooterlinks{
+        width: inherit;
+        height: 106px;
+        flex-direction: column;
+    }
+}
 
