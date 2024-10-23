@@ -63,7 +63,6 @@
     .overview-mainContent p {
         height: 180px;
         margin: 28px 0px 35px;
-        font: 400 15px/30px 'PublicSans-Regular';
         opacity: 0.8;
     }
 }
