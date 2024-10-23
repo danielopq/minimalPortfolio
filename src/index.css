@@ -118,6 +118,11 @@ h3{
         font: 700 40px/42px 'IbarraRealNova-Bold';
         letter-spacing: -0.36px;
     }
+
+    .mainText{
+        font: 400 15px/30px 'PublicSans-Regular';
+        color: var(--darkGrey);
+    }
 }
 
 /*############################## MOBILE VERSION ##############################*/
