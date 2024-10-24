@@ -36,4 +36,21 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #contactFooter{
+        width: 311px;
+        height: 214px;
+        margin-bottom: 80px;
+        flex-direction: column;
+    }
+    
+    #contactFooter h2{
+        width: inherit;
+        height: 126px;
+        text-align: center;
+    }
+    
+    #contactFooter-line{
+        display: none;
+    }
+}
