@@ -49,10 +49,10 @@
 @media screen and (max-width:767px) {
     #homeHeader {
         width: 311px;
-        height: 343px;
+        height: auto;
         margin-top: 72px;
         padding-top: 295px;
-        background: url('./img/homeHeader-mobile.jpg') top/311px no-repeat;
+        background: var(--lightGrey) url('./img/homeHeader-mobile.jpg') top/311px no-repeat;
     }
     
     #homeHeader>div {
@@ -60,6 +60,7 @@
         height: 248px;
         margin-top: 24px;
         padding-top: 0px;
+        background-color: var(--lightGrey);
     }
     
     #homeHeader h1 {
