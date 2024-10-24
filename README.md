@@ -19,17 +19,17 @@ To enhance user experience, smooth CSS transitions have been implemented through
 
 ### Screenshots
 
-- [Home - desktop version](https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/home-desktop.png)
-- [Home - tablet version](https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/home-tablet.png)
-- [Home - mobile version](https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/home-mobile.png)
+- [Home - desktop version](https://github.com/danielopq/minimalPortfolio/blob/main/screenshots/home-desktop.png)
+- [Home - tablet version](https://github.com/danielopq/minimalPortfolio/blob/main/screenshots/home-tablet.png)
+- [Home - mobile version](https://github.com/danielopq/minimalPortfolio/blob/main/screenshots/home-mobile.png)
 
-- [Create your plan - desktop version](https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/create_your_plan-desktop.png)
-- [Create your plan - tablet version](https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/create_your_plan-mobile.png)
-- [Create your plan - mobile version](https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/create_your_plan-tablet.png)
+- [Portfolio (details) - desktop version](https://github.com/danielopq/minimalPortfolio/blob/main/screenshots/portfolioDetails-desktop.png)
+- [Portfolio (details) - tablet version](https://github.com/danielopq/minimalPortfolio/blob/main/screenshots/portfolioDetails-mobile.png)
+- [Portfolio (details) - mobile version](https://github.com/danielopq/minimalPortfolio/blob/main/screenshots/portfolioDetails-tablet.png)
 
 ### Links
 
-- Live Site URL: [https://danielmartinez-coffeeroasters.netlify.app]
+- Live Site URL: [https://danielmartinez-portolio.netlify.app]
 
 ## My process
 
