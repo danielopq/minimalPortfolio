@@ -124,4 +124,26 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #contactForm{
+        width: 311px;
+        height: 575px;
+        padding: 32px 0px 0px;
+        margin-bottom: 80px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    #contactForm-content{
+        width: 311px;
+        margin-top: 24px;
+    }
+
+    #contactSentMessage{
+        width: 311px;
+    }
+    
+    #contactSentMessageText{
+        font: 400 16px/30px 'PublicSans-Regular';
+    }
+}
