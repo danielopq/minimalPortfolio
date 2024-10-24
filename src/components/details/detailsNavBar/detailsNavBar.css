@@ -27,5 +27,11 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #detailsNavBar{
+        width: 326px;
+        height: 148px;
+        margin-bottom: 64px;
+    }
+}
 
