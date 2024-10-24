@@ -71,4 +71,11 @@
         border-top: solid 1px rgba(151,151,151,0.15);
         border-bottom: solid 1px rgba(151,151,151,0.15);
     }
+
+    #aboutMe-mainContent p{
+        margin: 28px 0px 24px;
+        font: 400 16px/30px 'PublicSans-Regular';
+        opacity: 0.8;
+    }
+    
 }
