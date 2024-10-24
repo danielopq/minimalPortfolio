@@ -172,4 +172,63 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #detailsView {
+        width: 311px;
+        height: 1627px;
+        margin: 72px 0px 64px 0px;
+    }
+    
+    #detailsView-mainPic {
+        width: inherit;
+        height: 140px;
+        margin-bottom: 40px;
+        background-size: 311px;
+    }
+    
+    #detailsView-content {
+        height: 1447px;
+        flex-direction: column;
+    }
+    
+    #detailsView-overview {
+        width: 311px;
+        height: 452px;
+        padding: 24px 0px;
+        display: grid;
+        grid-template-columns: 311px;
+        grid-template-rows: 42px 180px 132px;
+        grid-template-areas:
+            "overview-title"
+            "overview-text"
+            "overview-keyWords";
+        row-gap: 24px;
+    }
+
+    #detailsView-overview-text {
+        margin-top: 0px;
+    }
+    
+    #detailsView-overview-keyWords {
+        margin-top: 0px;
+    }
+    
+    .keyWords {
+        margin-bottom: 0px;
+        font: 700 13px/30px 'PublicSans-Regular';
+    }
+    
+    #detailsView-overview button {
+        margin-top: 24px;
+    }
+    
+    #detailsView-description {
+        width: inherit;
+        height: 947px;
+    }
+
+    .previewPic {
+        height: 196px;
+        background-size: 311px;
+    }
+}
