@@ -43,3 +43,27 @@
         width: 458px;
     }
 }
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    #homeHeader {
+        width: 311px;
+        height: 343px;
+        margin-top: 72px;
+        padding-top: 295px;
+        background: url('./img/homeHeader-mobile.jpg') top/311px no-repeat;
+    }
+    
+    #homeHeader>div {
+        width: inherit;
+        height: 248px;
+        margin-top: 24px;
+        padding-top: 0px;
+    }
+    
+    #homeHeader h1 {
+        width: inherit;
+        color: var(--darkGrey);
+    }
+}
