@@ -64,3 +64,40 @@
     color: var(--darkGrey);
     opacity:0.5;
 }
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    .detailsNavBarButton{
+        width: 138px;
+        height: 98px;
+        flex-direction: column!important;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .buttonArrowIcon{
+        width: inherit;
+        height: 16px;
+    }
+    
+    .buttonLegend{
+        width: inherit;
+        height: 66px;
+    }
+    
+    .legendProjectTitle{
+        height: 36px;
+        font: 400 32px/36px 'IbarraRealNova-Regular';
+        letter-spacing: -0.29px;
+        color: var(--darkGrey);
+        transition: color 0.3s ease;
+    }
+    
+    .legendProjectDirection{
+        height: 30px;
+        font: 400 16px/30px 'PublicSans-Regular';
+        color: var(--darkGrey);
+        opacity:0.5;
+    }
+}
