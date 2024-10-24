@@ -1,10 +1,11 @@
 #aboutMe{
     width: 1110px;
     height: 600px;
+    margin: 150px 0px;
+    padding-right: 95px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 150px 0px;
 }
 
 #aboutMe-mainPic{
@@ -33,6 +34,7 @@
     #aboutMe{
         width: 689px;
         margin: 96px 0px;
+        padding-right: 0px;
     }
     
     #aboutMe-mainPic{
@@ -51,6 +53,7 @@
     #aboutMe{
         width: 311px;
         height: 995px;
+        padding-right: 0px;
         flex-direction: column;
         justify-content: flex-start;
         margin: 96px 115px;
