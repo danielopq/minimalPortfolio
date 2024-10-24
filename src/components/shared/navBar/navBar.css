@@ -1,4 +1,4 @@
-#navBar{
+#desktopNavBar{
     width: 1111px;
     height: 32px;
     position: absolute;
@@ -9,7 +9,7 @@
     background: url('./img/logo.svg') left/60px no-repeat;
 }
 
-#navBarLinks{
+.navBarMenu{
    width: 306px;
    height: inherit;
    float: right;
@@ -19,7 +19,7 @@
    justify-content: space-between;
 }
 
-#navBarLinks button{
+.navBarMenu button{
     font: 400 12px/32px 'PublicSans-Regular';
     letter-spacing: 2px;
     background-color: transparent;
@@ -43,6 +43,7 @@
 #navBar-mobileMenuIcon{
     width:24px;
     height: 32px;
+    display: none;
     border: none;
     background-color: transparent;
     float:right;
@@ -57,19 +58,24 @@
     background: url('./img/close.svg') center/18px no-repeat;
 }
 
-#navBarMobileMenu{
+#mobileNavBar{
     width: 100vw;
     height: 100vh;
     z-index: 101;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
     position:fixed;
+    padding-top: 200px;
     background-color: rgba(0,0,0,0.8);
-    top:70px;
+    top:85px;
 }
 
-.showNavBarMobileMenu{
-    display: block;
+.showMobileNavBar{
+    display: flex;
 }
-.hideNavBarMobileMenu{
+
+.hideMobileNavBar{
     display: none;
 }
 
@@ -85,13 +91,32 @@
 /*############################## MOBILE VERSION ##############################*/
 
 @media screen and (max-width:767px) {
-    #navBar{
+    #desktopNavBar{
         width: 311px;
         margin-top: 32px;
     }
+
+    #navBar-mobileMenuIcon{
+        display: block;
+    }
+
+    .navBarMenu{
+        height: 200px;
+        float:unset;
+        flex-direction: column;
+    }
     
-    #navBarLinks{
+    #desktopMenu{
        display: none;
     }
+
+    .navBarMenu button{
+        font: 400 18px/32px 'PublicSans-Regular';
+    }
+    
+    .navBarInactiveLink{
+        color:white;
+    }
+
 }
 
