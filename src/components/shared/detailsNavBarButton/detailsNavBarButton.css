@@ -16,6 +16,10 @@
     }
 }
 
+.detailsNavBarButton:active:not(:hover) .legendProjectTitle{
+    background-color: inherit;
+}
+
 .detailsNavBarButton:disabled{
     opacity: 0;
     cursor: default;
