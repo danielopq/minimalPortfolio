@@ -16,10 +16,6 @@
     }
 }
 
-.detailsNavBarButton:active:not(:hover) .legendProjectTitle{
-    color: inherit;
-}
-
 .detailsNavBarButton:disabled{
     opacity: 0;
     cursor: default;
@@ -80,10 +76,6 @@
         flex-direction: column!important;
         justify-content: space-between;
         align-items: center;
-    }
-
-    .detailsNavBarButton:hover .legendProjectTitle {
-        color: var(--cyan);
     }
 
     .buttonArrowIcon{
