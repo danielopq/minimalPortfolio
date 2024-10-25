@@ -1,4 +1,4 @@
-#desktopNavBar{
+#desktopNavBar {
     width: 1111px;
     height: 32px;
     position: absolute;
@@ -9,17 +9,17 @@
     background: url('./img/logo.svg') left/60px no-repeat;
 }
 
-.navBarMenu{
-   width: 306px;
-   height: inherit;
-   float: right;
-   display: flex;
-   flex-direction: row;
-   align-content: center;
-   justify-content: space-between;
+.navBarMenu {
+    width: 306px;
+    height: inherit;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
 }
 
-.navBarMenu button{
+.navBarMenu button {
     font: 400 12px/32px 'PublicSans-Regular';
     letter-spacing: 2px;
     background-color: transparent;
@@ -27,62 +27,64 @@
     transition: opacity 0.3s ease;
 }
 
-.navBarInactiveLink{
-    color:var(--darkBlue);
+.navBarInactiveLink {
+    color: var(--darkBlue);
     cursor: pointer;
 }
 
-.navBarInactiveLink:hover{
-    opacity: 0.3;
+@media (hover: hover) {
+    .navBarInactiveLink:hover {
+        opacity: 0.3;
+    }
 }
 
-.navBarActiveLink{
-    color:var(--cyan);
+.navBarActiveLink {
+    color: var(--cyan);
 }
 
-#navBar-mobileMenuIcon{
-    width:24px;
+#navBar-mobileMenuIcon {
+    width: 24px;
     height: 32px;
     display: none;
     border: none;
     background-color: transparent;
-    float:right;
+    float: right;
     cursor: pointer;
 }
 
-.mobileMenuIcon-burger{
+.mobileMenuIcon-burger {
     background: url('./img/hamburger.svg') center/24px no-repeat;
 }
 
-.mobileMenuIcon-close{
+.mobileMenuIcon-close {
     background: url('./img/close.svg') center/18px no-repeat;
 }
 
-#mobileNavBar{
+#mobileNavBar {
     width: 100vw;
     height: 100vh;
     z-index: 101;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    position:fixed;
+    position: fixed;
     padding-top: 200px;
-    background-color: rgba(0,0,0,0.8);
-    top:85px;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 85px;
 }
 
-.showMobileNavBar{
+.showMobileNavBar {
     display: flex;
 }
 
-.hideMobileNavBar{
+.hideMobileNavBar {
     display: none;
 }
 
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    #desktopNavBar{
+    #desktopNavBar {
         width: 689px;
         margin-top: 64px;
     }
@@ -91,32 +93,31 @@
 /*############################## MOBILE VERSION ##############################*/
 
 @media screen and (max-width:767px) {
-    #desktopNavBar{
+    #desktopNavBar {
         width: 311px;
         margin-top: 32px;
     }
 
-    #navBar-mobileMenuIcon{
+    #navBar-mobileMenuIcon {
         display: block;
     }
 
-    .navBarMenu{
+    .navBarMenu {
         height: 200px;
-        float:unset;
+        float: unset;
         flex-direction: column;
     }
-    
-    #desktopMenu{
-       display: none;
+
+    #desktopMenu {
+        display: none;
     }
 
-    .navBarMenu button{
+    .navBarMenu button {
         font: 400 18px/32px 'PublicSans-Regular';
     }
-    
-    .navBarInactiveLink{
-        color:white;
+
+    .navBarInactiveLink {
+        color: white;
     }
 
 }
-

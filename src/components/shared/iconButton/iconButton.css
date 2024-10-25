@@ -10,12 +10,16 @@
     transition: background-color 0.3s ease;
 }
 
-.iconButton:hover{
-    background-color: var(--cyan); 
+@media (hover: hover) {
+    .iconButton:hover{
+        background-color: var(--cyan); 
+    }
 }
 
-.iconButton:hover .iconButton-img{
-    background: rgba(0,0,0,0.1) url('./img/down-arrows-hover.svg') center/16px no-repeat;
+@media (hover: hover) {
+    .iconButton:hover .iconButton-img{
+        background: rgba(0,0,0,0.1) url('./img/down-arrows-hover.svg') center/16px no-repeat;
+    }
 }
 
 .iconButton-img{

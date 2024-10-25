@@ -18,8 +18,10 @@
     cursor: pointer;
 }
 
-#socialMedia button:hover{
-    opacity: 0.3;
+@media (hover: hover) {
+    #socialMedia button:hover{
+        opacity: 0.3;
+    }
 }
 
 .gitHub-bt-light{

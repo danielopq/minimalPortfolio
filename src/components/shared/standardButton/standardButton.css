@@ -13,9 +13,11 @@
     border: solid 1px var(--darkGrey);
 }
 
-.lightButton:hover{
-    background-color: var(--darkGrey);
-    color: var(--lightGrey);
+
+@media (hover: hover) {
+    #socialMedia button:hover{
+        opacity: 0.3;
+    }
 }
 
 .darkButton{
@@ -24,7 +26,9 @@
     border: solid 1px var(--darkBlue);
 }
 
-.darkButton:hover{
-    background-color: white;
-    color: var(--darkBlue);
+@media (hover: hover) {
+    .darkButton:hover{
+        background-color: white;
+        color: var(--darkBlue);
+    }
 }
