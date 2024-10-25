@@ -1,4 +1,4 @@
-.standardButton{
+.standardButton {
     height: 48px;
     font: 400 12px/48pxpx 'PublicSans-Regular';
     letter-spacing: 2px;
@@ -7,27 +7,27 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.lightButton{
+.lightButton {
     background-color: var(--lightGrey);
     color: var(--darkGrey);
     border: solid 1px var(--darkGrey);
 }
 
-
 @media (hover: hover) {
-    #socialMedia button:hover{
-        opacity: 0.3;
+    .lightButton:hover {
+        background-color: var(--darkGrey);
+        color: var(--lightGrey);
     }
 }
 
-.darkButton{
+.darkButton {
     background-color: var(--darkBlue);
     color: white;
     border: solid 1px var(--darkBlue);
 }
 
 @media (hover: hover) {
-    .darkButton:hover{
+    .darkButton:hover {
         background-color: white;
         color: var(--darkBlue);
     }
