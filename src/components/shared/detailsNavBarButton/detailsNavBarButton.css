@@ -17,7 +17,7 @@
 }
 
 .detailsNavBarButton:active:not(:hover) .legendProjectTitle{
-    background-color: inherit;
+    color: inherit;
 }
 
 .detailsNavBarButton:disabled{
