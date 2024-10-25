@@ -10,8 +10,10 @@
     cursor: pointer;
 }
 
-.detailsNavBarButton:hover .legendProjectTitle {
-    color: var(--cyan);
+@media (hover: hover) {
+    .detailsNavBarButton:hover .legendProjectTitle {
+        color: var(--cyan);
+    }
 }
 
 .detailsNavBarButton:disabled{
@@ -74,6 +76,10 @@
         flex-direction: column!important;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .detailsNavBarButton:hover .legendProjectTitle {
+        color: var(--cyan);
     }
 
     .buttonArrowIcon{
